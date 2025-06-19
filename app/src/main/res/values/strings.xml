@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FirstPhone</string>
+    <string name="welcome">Welcome to my first Android App</string>
+    <string name="name">Luther Dean Sambeli</string>
+    <string name="proceed">Proceed</string>
+    <string name="login_username">Username</string>
+    <string name="login_btn_signup">Signup</string>
+    <string name="login_btn_login">Login</string>
+    <string name="login_password">Password</string>
+</resources>
