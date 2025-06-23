@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@color/firstScreen_bg">
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/etMiddleName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/app_first_name"/>
+
+    <EditText
+        android:id="@+id/etMiddleName"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="23dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etFirstName"
+        app:layout_constraintTop_toTopOf="@+id/etFirstName"
+        android:hint="@string/app_middle_name"/>
+
+    <EditText
+        android:id="@+id/etLastname"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName"
+        android:hint="@string/app_last_name"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLastname"
+        app:layout_constraintVertical_bias="0.347"
+        android:hint="@string/app_email"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335"
+        android:hint="@string/login_password"/>
+
+    <EditText
+        android:id="@+id/etConfirmPass"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etPassword"
+        app:layout_constraintTop_toTopOf="@+id/etPassword"
+        android:hint="@string/app_confirm_pass"/>
+
+    <Button
+        android:id="@+id/btnSignupProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/login_btn_signup"
+        app:layout_constraintEnd_toStartOf="@+id/btnLoginBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:backgroundTint="@color/firstScreen_success"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnLoginBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:text="@string/app_btn_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSignupProceed"
+        app:layout_constraintTop_toTopOf="@+id/btnSignupProceed"
+        android:backgroundTint="@color/firstScreen_success"
+        android:textColor="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

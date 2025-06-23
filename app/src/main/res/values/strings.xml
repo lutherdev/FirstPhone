@@ -7,4 +7,10 @@
     <string name="login_btn_signup">Signup</string>
     <string name="login_btn_login">Login</string>
     <string name="login_password">Password</string>
+    <string name="app_btn_cancel">CANCEL</string>
+    <string name="app_confirm_pass">Confirm Password</string>
+    <string name="app_email">Email</string>
+    <string name="app_first_name">First Name</string>
+    <string name="app_middle_name">Middle Name</string>
+    <string name="app_last_name">Last Name</string>
 </resources>
