@@ -8,26 +8,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SignUp : AppCompatActivity() {
-    lateinit var btnLoginBack: Button
-    lateinit var btnSignUp: Button
+class ReviewInfo : AppCompatActivity() {
+    lateinit var btnBack: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_review_info)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        btnLoginBack = findViewById<Button>(R.id.btnLoginBack)
-        btnSignUp = findViewById<Button>(R.id.btnSignupProceed)
-        btnLoginBack.setOnClickListener{
-            val intent = Intent(this, Login::class.java)
-            startActivity(intent)
-        }
-        btnSignUp.setOnClickListener{
-            val intent = Intent(this, ReviewInfo::class.java)
+        btnBack = findViewById<Button>(R.id.btnSignBack)
+        btnBack.setOnClickListener{
+            val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
     }

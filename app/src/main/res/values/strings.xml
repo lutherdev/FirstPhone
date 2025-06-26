@@ -13,4 +13,6 @@
     <string name="app_first_name">First Name</string>
     <string name="app_middle_name">Middle Name</string>
     <string name="app_last_name">Last Name</string>
+    <string name="app_save">SAVE</string>
+    <string name="app_back">BACK</string>
 </resources>
